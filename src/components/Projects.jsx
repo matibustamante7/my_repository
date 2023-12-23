@@ -79,7 +79,7 @@ export default function Projects() {
 
 
     return (
-        <div className="sm:h-screen m-auto items-center flex xxs:flex-col xxs:h-max xxs:w-full sm:w-full md:w-2/3">
+        <div className="sm:h-screen m-auto items-center flex xxs:flex-col xxs:h-max xxs:w-full sm:w-full md:w-2/3 gap-6">
             <h3 className="text-blue-700 text-3xl">My projects</h3>
 
             <div id='container_proyects'
