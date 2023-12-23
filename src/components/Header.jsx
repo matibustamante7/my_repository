@@ -2,7 +2,7 @@ import { faFile } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import CVModal from "./ModalCv";
 import { useState } from "react";
-
+import imageMatiasBustamante from '../../public/matiasbustamante.png'
 
 export default function Header() {
 
@@ -32,7 +32,7 @@ export default function Header() {
                 <CVModal isOpen={isModalOpen} onRequestClose={closeModal} />
             </div>
             <div>
-                <img className="border-4 border-blue-800 rounded-full" src="../../public/matiasbustamante.png" alt="Matias Bustamante" />
+                <img className="border-4 border-blue-800 rounded-full" src={imageMatiasBustamante} alt="Matias Bustamante" />
             </div>
         </div>
     )
