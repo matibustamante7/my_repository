@@ -32,7 +32,7 @@ export default function Header() {
                 <CVModal isOpen={isModalOpen} onRequestClose={closeModal} />
             </div>
             <div>
-                <img className="border-4 border-blue-800 rounded-full" src="../../public/matiasbutamante.png" alt="Matias Bustamante" />
+                <img className="border-4 border-blue-800 rounded-full" src="../../public/matiasbustamante.png" alt="Matias Bustamante" />
             </div>
         </div>
     )
