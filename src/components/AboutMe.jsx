@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function AboutMe() {
     return (
-        <div className=" h-screen md:w-2/3 m-auto flex items-center justify-center xxs:flex-col gap-10 px-4 xxs:w-full p-10 xxs:h-max sm:flex-col ">
+        <div className=" sm:h-screen md:w-2/3 m-auto flex items-center justify-center xxs:flex-col gap-10 px-4 xxs:w-full p-10 xxs:h-max sm:flex-col ">
             <div className="flex flex-col gap-6 w-1/2 xxs:w-3/4  xxs:gap-6 ">
                 <h3 className="text-blue-700 text-3xl ">About me</h3>
                 <p className="text-base">Hi there! My name is Matias Bustamante, I'm a frontend developer based in Argentina. My strongest skills are HTML, CSS and JavaScript. I'am constantly expanding my knowledge with new technologies and tools. Also I'm comfortable working whit frameworks like React</p>

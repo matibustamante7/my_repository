@@ -2,8 +2,9 @@ import { faCss3Alt, faHtml5, faJs, faNodeJs, faReact } from "@fortawesome/free-b
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import imageRickAndMorty from '../../public/rickandmorty.png'
 import imageCarpiShop from '../../public/carpishop.png'
-// import imageEShop from '../../public/e-shop.png'
-// import imageGameSnake from '../../public/gameSkane.png'
+import imageEcommerce from '../../public/e-shop.png'
+import imageGameSnake from '../../public/snakeGame.png'
+import imageFormValidate from '../../public/form-validate.png'
 
 
 export default function Projects() {
@@ -28,40 +29,30 @@ export default function Projects() {
             demo: 'https://carpi-shop.vercel.app/',
         },
         {
-            id: 0,
-            title: 'Rick and Morty',
-            image: imageRickAndMorty,
-            description: 'Project made to consume the Rick and Morty API to display the correct data.',
-            technologies: ['HTML5', 'CSS3', 'JavaScript', 'React'],
-            repository: 'https://github.com/matibustamante7/RickAndMorty_diplomatura',
-            demo: 'https://rick-and-morty-diplomatura-h5dm.vercel.app/',
+            id: 2,
+            title: 'Ecommerce Platzi',
+            image: imageEcommerce,
+            description: 'Ecommerce project currently under development, consuming the Platzi API. It will have many more functionalities and technologies such as integrated Mercado Pago to make payments. It will also have a back end.',
+            technologies: ['HTML5', 'Tailwind', 'JavaScript', 'React'],
+            repository: 'https://github.com/matibustamante7/ecommerce_apliPlatzi',
+            demo: 'https://ecommerce-apli-platzi.vercel.app/',
         },
         {
-            id: 1,
-            title: 'Carpi shoop',
-            image: imageCarpiShop,
-            description: 'Project ecommerce with cart.',
+            id: 3,
+            title: 'Snake Game',
+            image: imageGameSnake,
+            description: 'Project to develop the famous snake game.',
             technologies: ['HTML5', 'CSS3', 'JavaScript'],
             repository: 'https://github.com/matibustamante7/CarpiShop',
-            demo: 'https://carpi-shop.vercel.app/',
-        },
-        {
-            id: 0,
-            title: 'Rick and Morty',
-            image: imageRickAndMorty,
-            description: 'Project made to consume the Rick and Morty API to display the correct data.',
-            technologies: ['HTML5', 'CSS3', 'JavaScript', 'React'],
-            repository: 'https://github.com/matibustamante7/RickAndMorty_diplomatura',
-            demo: 'https://rick-and-morty-diplomatura-h5dm.vercel.app/',
-        },
-        {
-            id: 1,
-            title: 'Carpi shoop',
-            image: imageCarpiShop,
+            demo: 'https://snake-game-phi-eight.vercel.app/',
+        },{
+            id: 4,
+            title: 'Form Validate',
+            image: imageFormValidate,
             description: 'Project ecommerce with cart.',
             technologies: ['HTML5', 'CSS3', 'JavaScript'],
-            repository: 'https://github.com/matibustamante7/CarpiShop',
-            demo: 'https://carpi-shop.vercel.app/',
+            repository: 'https://github.com/matibustamante7/form-validate-js',
+            demo: 'https://form-validate-js.vercel.app/',
         },
         // Puedes seguir agregando más objetos según sea necesario
     ];
@@ -88,13 +79,13 @@ export default function Projects() {
 
 
     return (
-        <div className="h-screen m-auto items-center gap-10 flex xxs:flex-col xxs:h-max xxs:w-full sm:w-full md:w-2/3">
+        <div className="sm:h-screen m-auto items-center flex xxs:flex-col xxs:h-max xxs:w-full sm:w-full md:w-2/3">
             <h3 className="text-blue-700 text-3xl">My projects</h3>
 
             <div id='container_proyects'
             className="flex flex-row flex-wrap justify-center gap-8 xxs:flex-col xxs:items-center sm:flex-col md:flex-row lg:flex-row ">
                 {projects.map(project => (
-                    <div key={project.id} className=" flex flex-col justify-between border-2 border-gray-800 rounded-3xl items-start p-4 xxs:w-5/6 lg:w-5/12 lg:h-1/3 xl:w-1/4">
+                    <div key={project.id} className=" flex flex-col justify-between border-2 border-gray-800 rounded-3xl items-start p-4 xxs:w-5/6 lg:w-5/12  xl:w-1/4">
                         <h2 className="text-xl font-semibold">{project.title}</h2>
                         <img className="w-full rounded-xl" src={project.image} alt={project.title} />
                         <p className="text-sm my-2">{project.description}</p>
