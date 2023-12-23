@@ -49,7 +49,7 @@ export default function NavBar() {
     };
 
     return (
-        <div className="w-full m-auto flex">
+        <div className="w-full m-auto flex fixed">
             <div className="m-auto flex justify-center items-center xxs:flex-col xxs:gap-4 xxs:justify-normal xxs:h-auto lg:text-center lg:flex-row lg:gap-20 lg:h-20 sm:flex-row sm:h-20">
                 <Link
                     to="header"
@@ -79,7 +79,7 @@ export default function NavBar() {
                     to="projects"
                     spy={true}
                     smooth={true}
-                    offset={-30}
+                    offset={-100}
                     duration={800}
                     onClick={handleClickProjectsClick}
                     className={`text-lg ${projectsClick ? 'text-blue-600 border-b-2 border-blue-600' : 'text-white'} hover:text-blue-600 hover:cursor-pointer transition delay-100 duration-200 ease-in-out`}
